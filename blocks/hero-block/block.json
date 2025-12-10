@@ -1,0 +1,14 @@
+{
+  "apiVersion": 2,
+  "name": "sh/hero-block",
+  "title": "Hero Block",
+  "category": "widgets",
+  "icon": "cover-image",
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "render": "file:./render.php"
+}

@@ -1,0 +1,5 @@
+.hero-block {
+  padding: 80px 0;
+  text-align: center;
+  color: var(--wp--preset--color--primary);
+}

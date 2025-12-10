@@ -1,0 +1,12 @@
+{
+  "name": "sh-starter",
+  "version": "1.0.0",
+  "scripts": {
+    "sass:dev": "sass --watch src/sass:assets/css --style=expanded",
+    "sass:build": "sass src/sass:assets/css --style=compressed"
+  },
+  "devDependencies": {
+    "sass": "^1.70.0",
+    "stylelint": "^15.0.0"
+  }
+}
