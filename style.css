@@ -1,11 +1,96 @@
 /*
-Theme Name: SH Starter
+Theme Name: SH Starter Portfolio
 Theme URI: https://saddamhossen.dev
 Author: Saddam Hossen
 Author URI: https://saddamhossen.dev
-Description: Hybrid WordPress starter theme for client projects (BE Starter inspired).
+Description: A fast, minimal, modern block-based portfolio theme built on top of the SH Starter boilerplate by Saddam Hossen. Optimized for performance, accessibility, and custom WordPress block development.
 Version: 1.0.0
+Requires at least: 6.5
+Tested up to: 6.7
+Requires PHP: 8.0
 License: GNU GPL v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: sh-starter
-Tags: hybrid, block-ready, WooCommerce-ready, modular
+Tags: block-theme, full-site-editing, portfolio, developer-friendly, minimal, custom-blocks, hybrid, WooCommerce-ready, responsive-layout, accessibility-ready
 */
+
+/* 
+---------------------------------------------------------------
+GLOBAL BASELINE
+Add only essential CSS here. 
+All main styling should be in /src/sass and compiled via npm.
+---------------------------------------------------------------
+*/
+
+:root {
+  --sh-font-primary: "Inter", sans-serif;
+  --sh-font-secondary: "JetBrains Mono", monospace;
+
+  --sh-color-dark: #0f0f0f;
+  --sh-color-light: #ffffff;
+  --sh-color-gray: #f5f5f5;
+  --sh-color-accent: #4f46e5; /* Indigo tone – can be changed in theme.json */
+
+  --sh-radius: 8px;
+  --sh-max-width: 1280px;
+}
+
+/* Smooth Text Rendering */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--sh-font-primary);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Better Default Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Utility Classes */
+.container {
+  width: 100%;
+  max-width: var(--sh-max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+/* WooCommerce Base Fix (theme-friendly) */
+.woocommerce img,
+.woocommerce-page img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 
+---------------------------------------------------------------
+PLACEHOLDER 
+Add custom minimal CSS if needed.
+But keep bulk styling in SCSS files only.
+---------------------------------------------------------------
+*/
+
+/* Custom Portfolio Adjustments */
+.hero-section {
+  padding: 100px 0 80px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+/* End of file */
