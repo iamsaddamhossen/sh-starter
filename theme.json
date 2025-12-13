@@ -2,31 +2,61 @@
   "version": 2,
   "settings": {
     "color": {
+      "custom": true,
+      "customGradient": true,
       "palette": [
-        {
-          "slug": "primary",
-          "color": "#0b5fff",
-          "name": "Primary"
-        },
-        {
-          "slug": "accent",
-          "color": "#ff6b6b",
-          "name": "Accent"
-        }
+        { "slug": "primary", "name": "Primary", "color": "#1A1A1A" },
+        { "slug": "secondary", "name": "Secondary", "color": "#4F46E5" },
+        { "slug": "accent", "name": "Accent", "color": "#FF6B35" },
+        { "slug": "light", "name": "Light", "color": "#FFFFFF" },
+        { "slug": "gray", "name": "Gray", "color": "#F5F5F5" }
       ]
     },
     "typography": {
+      "customFontSize": true,
+      "dropCap": true,
       "fontFamilies": [
         {
-          "fontFamily": "Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
-          "slug": "primary"
+          "slug": "primary",
+          "name": "Inter",
+          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+        },
+        {
+          "slug": "secondary",
+          "name": "JetBrains Mono",
+          "fontFamily": "JetBrains Mono, Menlo, Monaco, monospace"
         }
+      ],
+      "fontSizes": [
+        { "slug": "small", "name": "Small", "size": "14px" },
+        { "slug": "normal", "name": "Normal", "size": "16px" },
+        { "slug": "medium", "name": "Medium", "size": "20px" },
+        { "slug": "large", "name": "Large", "size": "32px" },
+        { "slug": "xlarge", "name": "XLarge", "size": "48px" }
       ]
     },
     "layout": {
-      "contentSize": "760px",
-      "wideSize": "1200px",
-      "blockGap": "2rem"
+      "contentSize": "1200px",
+      "wideSize": "1600px"
+    },
+    "spacing": {
+      "customPadding": true,
+      "units": ["px", "em", "rem", "%"]
     }
-  }
+  },
+  "styles": {
+    "color": {
+      "background": "var(--sh-color-light)",
+      "text": "var(--sh-color-dark)"
+    },
+    "typography": {
+      "fontFamily": "var(--sh-font-primary)",
+      "lineHeight": 1.6
+    },
+    "spacing": {
+      "padding": "20px"
+    }
+  },
+  "customTemplates": [],
+  "customTemplateParts": []
 }
