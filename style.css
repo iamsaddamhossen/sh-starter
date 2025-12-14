@@ -15,11 +15,11 @@ Tags: block-theme, full-site-editing, portfolio, developer-friendly, minimal, cu
 */
 
 /* 
----------------------------------------------------------------
+------------------------------------------------------------------
 GLOBAL BASELINE
 Add only essential CSS here. 
 All main styling should be in /src/sass and compiled via npm.
----------------------------------------------------------------
+------------------------------------------------------------------
 */
 
 :root {
